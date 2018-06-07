@@ -1,4 +1,3 @@
-from collections import deque
 
 #a list with user defined inputs
 a=[]
