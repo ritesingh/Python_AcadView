@@ -39,13 +39,14 @@ print("added 1 ",A)
 A.pop()
 print("Stack implemented popping here from last ",A)
     #Queue First In First Out i am importing for this 
-A=deque([1,7,23,25,35,36])
+A=[1,7,23,25,35,36]
 A.append(1)
 print("added 1 ",A)
 A.append(0)
 print("added 0 ",A)
-A.popleft()
+A.pop(0)
 print("Queue Implemented popping from left ",A)
+
 
 
 #Count even and odd numbers in a list
