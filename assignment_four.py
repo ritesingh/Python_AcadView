@@ -1,3 +1,5 @@
+import operator 
+
 #Write a program to create a tuple with different data types and do the following operations. 
  #Find the length of tuple
 t=(1,2,[3,4,5,6],'d','e','f','j')
@@ -48,16 +50,17 @@ print("intersection of s1 and s2:",s1&s2)
 
 #Q.1- Create a dictionary to store name and marks of 10 students by user input.
 d=dict()
-for i in range(0,1):
+for i in range(0,10):
     print("enter name of student",i+1,": ")
     name=input()
     marks=int(input("enter marks for him: "))
     d[name]=marks
 print("the created dictionary with count is: ",d)
 
-#Sort the above dictionary according to marks 
-
- 
+#Sort the above dictionary according to marks
+ #as dict are unsortable we can only represent it in sortable form and i have used list of tuples to do so.
+sort = sorted(d.items(), key=operator.itemgetter(1))
+print("sorted dictionary is: ",sort)
 
 #Count the number of occurrence of each letter in word "MISSISSIPPI". Store count of every letter with the letter in a dictionary.
 s="MISSISSIPPI"
