@@ -7,8 +7,9 @@ print("the ten numbers are :",arr)
 
 
 #Write an infinite loop.An infinite loop never ends. Condition is always true.
-for(i=0;i>0;i+=1):
-    print(i)
+while(True):
+    print("HAHA")
+
 
 
 """Create a list of integer elements by user input. Make a new list which will
