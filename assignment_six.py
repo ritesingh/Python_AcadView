@@ -14,7 +14,7 @@ for(i=0;i>0;i+=1):
 """Create a list of integer elements by user input. Make a new list which will
 store square of elements of previous list."""
 arr=[]
-siz=input("enter the size of list:")
+siz=int(input("enter the size of list:"))
 for i in range(0,siz):
     ele=input("enter the ",i+1," element:")
     arr.append(ele)
@@ -67,15 +67,20 @@ for i in range(0,4):
 
 #Create a user defined dictionary and get keys corresponding to the value using for loop.
 d=dict()
-for i in range(0,5):
+siz=int(input("enter the size of dictionary:"))
+for i in range(0,siz):
     k=input("enter key ")
     v=input("enter value ")
     d[k]=v
+
+print("you made the dictionary ",d.items())
+
 ele=input("enter the value whose key is needed:")
 
 for i in d:
     if d[i]==ele:
         print("this is the key:",i)
+
 
 """Take inputs from user to make a list. Again take one input from user and search it in the list
 and delete that element, if found. Iterate over list using for loop."""
