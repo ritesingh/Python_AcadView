@@ -82,7 +82,7 @@ ele=input("enter the value whose key is needed:")
 
 for i in d:
     if d[i]==ele:
-        print("this is the key:",i)
+        print("this is the corresponding key:",i)
 
 
 """Take inputs from user to make a list. Again take one input from user and search it in the list
