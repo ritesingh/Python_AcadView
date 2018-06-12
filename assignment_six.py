@@ -88,54 +88,15 @@ for i in d:
 """Take inputs from user to make a list. Again take one input from user and search it in the list
 and delete that element, if found. Iterate over list using for loop."""
 arr=[]
-for i in range(0,5):
-    a=input("enter the ele:")
+siz=int(input("enter the size: "))
+for i in range(0,siz):
+    print("enter the ",i+1," element: ")
+    a=input()
     arr.append(a)
-b=input("enter the ele to be deleted ")
+print("you created the list:",arr)
+b=input("enter the ele to be deleted: ")
 for i in arr:
     if i==b:
         arr.pop(arr.index(i))
         
 print("new array ",arr)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-            
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
