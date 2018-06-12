@@ -17,13 +17,15 @@ store square of elements of previous list."""
 arr=[]
 siz=int(input("enter the size of list:"))
 for i in range(0,siz):
-    ele=input("enter the ",i+1," element:")
+    print("enter the ",i+1," element:")
+    ele=int(input())
     arr.append(ele)
 print("the original list is",arr)
 arr1=[]
 for i in arr:
     arr1.append(i*i)
 print("the required list is",arr1)
+
 
 
 """From a list containing ints, strings and floats, make three lists to store
