@@ -7,7 +7,7 @@ print("the ten numbers are :",arr)
 
 
 #Write an infinite loop.An infinite loop never ends. Condition is always true.
-for(i=0;i>0;i++):
+for(i=0;i>0;i+=1):
     print(i)
 
 
