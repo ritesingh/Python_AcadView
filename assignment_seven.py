@@ -36,6 +36,21 @@ print(table(1))  #calling that function
 
 
 #Q.4- Write a function to calculate power of a number raised to other ( a^b ) using recursion.
+def power(a,b,p):
+    if b!=0:
+       p*=a
+       b-=1
+       return power(a,b,p)
+    elif b==0:
+       return p
+    
+
+a=int(input("enter the number: "))
+b=int(input("enter its power: "))
+print("the required ans is ",power(a,b,1))
+
+
+#Q.5- Write a function to find factorial of a number but also store the factorials calculated in a dictionary.
 def fact(num):
     if num==0:
         return 1
@@ -48,6 +63,8 @@ for i in range(0,n):
     num=int(input("enter the number: "))
     d[num]=fact(num)
 print("calculated factorials are: ",d)
+
+
 
 
 
