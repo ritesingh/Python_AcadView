@@ -37,6 +37,6 @@ print("GCD is : ",math.gcd(a,b))
 #1. Get current working directory.
 print("current working directory is: ",os.getcwd())
 #2. Get the user environment.
-print("the user environment is: ",os.environ)
+print("the user environment is: ",os.environ["HOMEPATH"])
 
 
