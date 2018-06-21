@@ -83,6 +83,15 @@ if __name__ == '__main__':
    without having direct access. ( giving specifications for our need to various vendors) example:Android Studio, iOS XCode and Windows .NET Framework SDK"""
 
 #Q.5- Try to access Spotify API . Find out some library for it and play some music.
+katyperry_uri="spotify:artist:i43hyhchmj8h3bkpvfvzr6i8r"  #this the id used is of my account , code source:documentation.
+spotify=spotipy.Spotify()
+results=spotify.artist_albums(katyperry_uri,album_type="album")
+albums=results['items']
+while results['next']:
+    results=spotify.next(results)
+    albums.extend(results['items'])
+for album in  albums:
+    print((album['name']))
 
 
 
