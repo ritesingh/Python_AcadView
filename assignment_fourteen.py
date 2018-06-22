@@ -1,4 +1,12 @@
 import random
+#Q.1- Write a Python program to read last n lines of a file
+
+with open("test1.txt",'r',encoding='utf-8') as f:
+    stuff=f.readlines()
+lastline=stuff[-1]
+n=int(input("enter the number of lines for reading:"))
+lines=stuff[-n:]
+print(lines)
 
 
 #Q.2- Write a Python program to count the frequency of words in a file.
@@ -45,7 +53,7 @@ with open("Random.txt",'r',encoding='utf-8') as f:
     stuff = f.readlines() 
     for line in stuff: 
         print(line)
-        arr.append(line)
+        arr.append(line)  #though the array elements will be of type number\n , but that will create no problem at all and will make copying easy
 
 arr.sort()
 
