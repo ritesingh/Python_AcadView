@@ -26,12 +26,12 @@ query5 = 'Create table Authors_Titles(Author_Title_ID int primary key,AuthorID i
 cursor.execute(query5)
 print('Table Created')
 except pm.DatabaseError as e:
-if con:
-con.rollback()
-print('Problem occured: ', e)
+  if con:
+    con.rollback()
+  print('Problem occured: ', e)
 finally:
-if cursor:
-cursor.close()
-if con:
-con.close()
-print('DONE!!')
+  if cursor:
+    cursor.close()
+  if con:
+    con.close()
+
